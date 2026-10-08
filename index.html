@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan & Seal On Demand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Scan & Seal On Demand</h1>
+        <p>Document services made simple, secure, and convenient.</p>
+        <!-- Native link anchor that targets id="contact" directly -->
+        <a href="#contact" class="button">Request Service</a>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="card">
+                    <h3>Document Scanning</h3>
+                    <p>Convert paper documents into organized digital files.</p>
+                </div>
+                <div class="card">
+                    <h3>Document Preparation</h3>
+                    <p>Professional document handling and preparation services.</p>
+                </div>
+                <div class="card">
+                    <h3>On-Demand Support</h3>
+                    <p>Convenient service designed around your schedule.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>How It Works</h2>
+            <ol>
+                <li>Submit a request</li>
+                <li>Receive confirmation and pricing</li>
+                <li>We complete the work</li>
+            </ol>
+        </section>
+        
+        <section>
+            <h2>About Us</h2>
+            <p>
+                Scan & Seal On Demand provides convenient, dependable
+                document services with a personal touch.
+            </p>
+        </section>
+        
+        <!-- The id="contact" here catches the header button link perfectly -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p class="contact-email">
+                Email: <a href="mailto:rhayag@scanandsealondemand.com">rhayag@scanandsealondemand.com</a>
+            </p>
+            
+            <form id="requestForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Your Full Name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="your.name@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message / Service Request</label>
+                    <textarea id="message" rows="5" required placeholder="Describe the document services you need..."></textarea>
+                </div>
+                
+                <button type="submit" class="button form-submit-btn">Send Request</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Scan & Seal On Demand. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

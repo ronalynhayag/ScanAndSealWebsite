@@ -1,0 +1,230 @@
+/* ==========================================
+   1. GLOBAL STYLES & RESET
+   ========================================== */
+html {
+    scroll-behavior: smooth; /* Enables native smooth scrolling when clicking buttons */
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #faf9f6;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   2. HEADER & HERO SECTION
+   ========================================== */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #2f6f6d;
+    color: white;
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 2.4rem;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    margin-bottom: 25px;
+    font-size: 1.15rem;
+    opacity: 0.95;
+}
+
+/* ==========================================
+   3. LAYOUT & SECTIONS (TIGHTENED)
+   ========================================== */
+section {
+    padding: 24px 20px; /* Reduced to eliminate wide gaps between sections */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #2f6f6d;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e5dfd3;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 12px; /* Pulls cards and lists snugly under headers */
+}
+
+/* ==========================================
+   4. SERVICES SIDE-BY-SIDE GRID
+   ========================================== */
+.services-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2f6f6d;
+}
+
+.card p {
+    margin: 0;
+}
+
+/* ==========================================
+   5. HOW IT WORKS (STYLING THE LIST)
+   ========================================== */
+ol {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: custom-counter;
+}
+
+ol li {
+    counter-increment: custom-counter;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+ol li:last-child {
+    margin-bottom: 0;
+}
+
+ol li::before {
+    content: counter(custom-counter);
+    background: #d4a85c;
+    color: black;
+    font-weight: bold;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 0.95rem;
+}
+
+/* ==========================================
+   6. CONTACT SECTION & INTERACTIVE FORM
+   ========================================== */
+.contact-email {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #2f6f6d;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dashed #2f6f6d;
+    padding-bottom: 2px;
+    transition: all 0.2s ease;
+}
+
+#contact a:hover {
+    color: #d4a85c;
+    border-bottom-color: #d4a85c;
+}
+
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2f6f6d;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: #fafafa;
+    transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2f6f6d;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(47, 111, 109, 0.15);
+}
+
+.form-submit-btn {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    width: auto;
+}
+
+/* ==========================================
+   7. GENERIC REUSABLE BUTTON
+   ========================================== */
+.button {
+    display: inline-block;
+    background: #d4a85c;
+    color: black;
+    padding: 12px 26px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background: #c3964b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* ==========================================
+   8. FOOTER STYLES
+   ========================================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2f6f6d;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-top: 24px;
+}
+
+footer p {
+    margin: 0;
+}
